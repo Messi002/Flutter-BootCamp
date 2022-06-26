@@ -1,0 +1,34 @@
+[
+  {
+      "rating":"4.5",
+      "title":"THE WATER CURE",
+      "text":"Martin Hyatt",
+      "img":"./img/img1.jpg",
+      "audio":"ddd"
+  },
+  {
+    "rating":"4.6",
+    "title":"PEACE LIFE",
+    "text":"Hazard Bin",
+    "img":"./img/img2.png",
+    "audio":"ddd"
+}, {
+    "rating":"4.5",
+    "title":"Day Remember",
+    "text":"Nicholas",
+    "img":"./img/img3.png",
+    "audio":"ddd"
+}, {
+    "rating":"4.5",
+    "title":"Cameroon",
+    "text":"Douala",
+    "img":"./img/img4.png",
+    "audio":"ddd"
+}, {
+    "rating":"4.5",
+    "title":"THE RISE",
+    "text":"Jon Gart",
+    "img":"../img/img5.png",
+    "audio":"ddd"
+}
+]
