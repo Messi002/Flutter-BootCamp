@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -29,11 +31,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.purple[300],
       appBar: AppBar(
-        title: const Text("DemoApp"),
+        title: const Text("I Am Rich"),
         backgroundColor: Colors.purple[600],
       ),
-      body: const Center(
-        child: Text("Hello Austin"),
+      body: Center(
+        child: Image(
+          image: AssetImage('img/diamond.png'),
+        ),
       ),
     );
   }
