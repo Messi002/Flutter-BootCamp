@@ -1,9 +1,9 @@
 # app
 
 What was covered...
-- I_am_rich
-- Mi_card
-- Dice flutter
+- I_am_rich App
+- Mi_card App
+- Dice flutter App
 
 ## Getting Started
 
