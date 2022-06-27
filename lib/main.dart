@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "MIRsquared Audio Player",
+      title: "MIRsquared",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.teal),
       home: const MyHomePage(),
     );
   }
@@ -29,16 +29,21 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple[300],
-      appBar: AppBar(
-        title: const Text("I Am Rich"),
-        backgroundColor: Colors.purple[600],
-      ),
-      body: Center(
-        child: Image(
-          image: AssetImage('img/diamond.png'),
+        backgroundColor: Colors.teal,
+        appBar: AppBar(
+          title: const Text("Mi Card"),
         ),
-      ),
+        body: SafeArea(
+          child: Column(
+            children:const <Widget>[
+           CircleAvatar(
+             radius: 80.0,
+             backgroundImage: AssetImage('img/diamond.png'),
+           ),
+           Text('Austin Gareth',style: TextStyle(fontSize: 40.0,color: Colors.white,fontWeight: FontWeight.bold),)
+            ],
+          ),
+          ),
     );
   }
 }

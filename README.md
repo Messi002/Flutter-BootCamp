@@ -19,3 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 Websites followed during the course...
 - https://material.io/design/color/the-color-system.html
 - https://appicon.co
+- Update the app size by using the vector tool in Andriod Studio
