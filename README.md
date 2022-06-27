@@ -1,6 +1,9 @@
 # app
 
-A new Flutter project.
+What was covered...
+- I_am_rich
+- Mi_card
+- Dice flutter
 
 ## Getting Started
 
