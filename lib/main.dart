@@ -54,7 +54,7 @@ class _DicePageState extends State<DicePage> {
             onPressed: (){
               setState(() {
                 
-                  hello you
+               
               });
             }, 
             child: Image.asset('Dicepics/dice$leftNum.png'),
