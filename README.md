@@ -24,3 +24,6 @@ Websites followed during the course...
 - https://appicon.co
 - Update the app size by using the vector tool in Andriod Studio
 - https://materialpalette.com for choosing theme colors for your app.
+
+
+

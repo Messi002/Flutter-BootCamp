@@ -1,9 +1,7 @@
 // ignore_for_file: prefer_const_constructors, avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/gestures.dart';
+import 'dart:math';
 
 
 void main() => runApp(const MyApp());
@@ -22,7 +20,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             backgroundColor: Colors.red,
             title: const Text(
-              "Dicee App",
+              "MIRsquared Dicee App",
               style: TextStyle(
                 fontFamily: 'Pacifico',
               ),
@@ -43,7 +41,7 @@ class DicePage extends StatefulWidget {
 
 class _DicePageState extends State<DicePage> {
     int rightNum = 1;
-       int leftNum = 1;
+       int leftNum = 3;
   
   @override
   Widget build(BuildContext context) {
@@ -53,7 +51,7 @@ class _DicePageState extends State<DicePage> {
           child: TextButton(
             onPressed: (){
               setState(() {
-                
+                leftNum = Random().nextInt(6) + 1;
                
               });
             }, 
@@ -63,7 +61,9 @@ class _DicePageState extends State<DicePage> {
         Expanded(
           child: TextButton(
         onPressed: (){
-              print('right button got correctly');
+             setState(() {
+               rightNum = Random().nextInt(6) + 1;
+             });
             }, 
             child: Image.asset('Dicepics/dice$rightNum.png'),
           ),
