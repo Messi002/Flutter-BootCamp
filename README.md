@@ -4,6 +4,15 @@ What was covered...
 - I_am_rich App
 - Mi_card App
 - Dice flutter App
+- MagicBall App
+
+
+Websites followed during the course...
+- https://material.io/design/color/the-color-system.html
+- https://appicon.co
+- Update the app size by using the vector tool in Andriod Studio
+- https://materialpalette.com for choosing theme colors for your app.
+
 
 ## Getting Started
 
@@ -19,11 +28,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-Websites followed during the course...
-- https://material.io/design/color/the-color-system.html
-- https://appicon.co
-- Update the app size by using the vector tool in Andriod Studio
-- https://materialpalette.com for choosing theme colors for your app.
+
 
 
 
