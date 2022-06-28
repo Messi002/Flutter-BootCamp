@@ -1,8 +1,10 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:ffi';
+// ignore_for_file: prefer_const_constructors, avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter/gestures.dart';
+
 
 void main() => runApp(const MyApp());
 
@@ -14,32 +16,64 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "MIRsquared",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.teal),
-      home: const MyHomePage(),
+      // theme: ThemeData(primarySwatch: Colors.red),
+      home: Scaffold(
+        backgroundColor: Colors.red,
+        appBar: AppBar(
+            backgroundColor: Colors.red,
+            title: const Text(
+              "Dicee App",
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+              ),
+            )),
+        body: DicePage(),
+      ),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+
+class DicePage extends StatefulWidget {
+  const DicePage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<DicePage> createState() => _DicePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _DicePageState extends State<DicePage> {
+    int rightNum = 1;
+       int leftNum = 1;
+  
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.teal,
-      appBar: AppBar(
-        title: const Text("Dice App"),
-      ),
-      body: SafeArea(
-        child: null,
-               ),
+    return Center(
+      child: Row(children: <Widget>[
+        Expanded(
+          child: TextButton(
+            onPressed: (){
+              setState(() {
+                
+                  
+              });
+            }, 
+            child: Image.asset('Dicepics/dice$leftNum.png'),
+          ),
+        ),
+        Expanded(
+          child: TextButton(
+        onPressed: (){
+              print('right button got correctly');
+            }, 
+            child: Image.asset('Dicepics/dice$rightNum.png'),
+          ),
+        ),
+      ]),
     );
+
   }
 }
-1
 
+
+
+ 
